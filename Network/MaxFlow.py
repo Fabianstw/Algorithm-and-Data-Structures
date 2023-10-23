@@ -24,9 +24,10 @@ def read_input():
             delta = weight
 
 
-def bfs(graph_s, s, t):
+def bfs(graph_s, s, t, min_w=0):
     """
     Find a s-t path
+    :param min_w:
     :param graph_s: The graph
     :param s: Starting node
     :param t: End Node terminate if found
@@ -38,7 +39,7 @@ def bfs(graph_s, s, t):
     while queue:
         node = queue.pop(0)
         for neighbour, weight in enumerate(graph_s[node]):
-            if 0 < weight < math.inf and neighbour not in visited:
+            if min_w < weight < math.inf and neighbour not in visited:
                 visited[neighbour] = (node, weight)
                 queue.append(neighbour)
                 if neighbour == t-1:
@@ -64,32 +65,58 @@ def backtrack_path(visited, s, t):
     return path[::-1], bottleneck
 
 
-def capacity_scaling():
+def Ford_Fulkerson_Algorithm():
     global delta
     s = 1
     t = len(graph)
-    count = 0
     max_flow = 0
-    """
-    FOREACH edge e∈E: f(e)←0.
-    """
-    f_e = [[0 for _ in range(len(graph))] for _ in range(len(graph))]
     graph_f = copy.deepcopy(graph)
     while True:
-        count += 1
-        if count > 10:
-            break
         visited = bfs(graph_f, s, t)
         if visited:
             path, bottleneck = backtrack_path(visited, s, t)
         else:
             break
+        max_flow += bottleneck
         for i in range(len(path)-1):
             u = path[i]
             v = path[i+1]
-
             graph_f[u][v] -= bottleneck
             graph_f[v][u] += bottleneck
+
+    return max_flow
+
+
+def find_lowest_2_power(n):
+    """
+    Find the lowest power of 2 that is greater than n
+    :param n: The number
+    :return: The lowest power of 2 that is greater than n
+    """
+    if n > 0:
+        return 2 ** math.ceil(math.log(n, 2))
+    return 0
+
+
+def capacity_scaling():
+    global delta
+    delta = find_lowest_2_power(delta)
+    s = 1
+    t = len(graph)
+    max_flow = 0
+    graph_f = copy.deepcopy(graph)
+    while delta >= 1:
+        visited = bfs(graph_f, s, t, delta-1)
+        if visited:
+            path, bottleneck = backtrack_path(visited, s, t)
+            max_flow += bottleneck
+            for i in range(len(path) - 1):
+                u = path[i]
+                v = path[i + 1]
+                graph_f[u][v] -= bottleneck
+                graph_f[v][u] += bottleneck
+        else:
+            delta //= 2
 
     return max_flow
 
@@ -97,9 +124,4 @@ def capacity_scaling():
 if __name__ == '__main__':
     read_input()
     f = capacity_scaling()
-    summe = 0
-    for a in f:
-        summe += a[-1]
-
-    print(summe)
-
+    print(f)
