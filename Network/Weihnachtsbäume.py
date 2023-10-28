@@ -17,10 +17,18 @@ class ChristmasTree:
         self.s = 0
         self.t = len(self.graph)
 
-        self.print_output()
-
         output = self.capacity_scaling()
         print(output)
+
+    def matrix_to_adjacency_list(self, matrix):
+        adjacency_list = {}
+        for i in range(len(matrix)):
+            neighbors = []
+            for j in range(len(matrix[i])):
+                if matrix[i][j] != 0:
+                    neighbors.append(j)
+            adjacency_list[i] = neighbors
+        return adjacency_list
 
     def create_graph(self):
         """
@@ -41,6 +49,8 @@ class ChristmasTree:
 
         if len(self.matrix) > 0:
             num_list = self.create_matrix(len(self.matrix), len(self.matrix[0]))
+        else:
+            num_list = []
 
         if len(self.matrix) > 0:
             for n in range(len(self.matrix)):
