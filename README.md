@@ -4,5 +4,6 @@
 
 # Algorithms includes in this GitHub repo
 
- - APSP Algorithms
+- APSP Algorithms
 - Network Flow Algorithms
+- Amortized analysis
