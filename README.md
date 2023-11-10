@@ -6,4 +6,6 @@
 
 - APSP Algorithms
 - Network Flow Algorithms
-- Amortized analysis
+- Amortised analysis
+- Splay Trees (nothing implemented yet)
+- Randomised Algorithms 
