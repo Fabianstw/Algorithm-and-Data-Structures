@@ -23,6 +23,9 @@ class Solution:
                 return tmp
 
 
+
+
+
 if __name__ == '__main__':
     c = Solution()
     print(c.findDifferentBinaryString(["00","01"]))
