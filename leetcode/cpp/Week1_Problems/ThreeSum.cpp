@@ -9,7 +9,7 @@ using namespace std;
 #include <set>
 #include <algorithm>
 
-class Solution {
+class SolutionThreeSum {
 
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
