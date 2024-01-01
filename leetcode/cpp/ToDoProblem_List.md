@@ -7,7 +7,7 @@ Trying to solve those 200 Leetcode Problems in Cpp.
 |---| ----- | -------- |
 |  | **Array** | |
 |DONE 15| [3Sum](https://leetcode.com/problems/3sum) | Medium |
-|1324| [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | Medium |
+|DONE 1324| [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | Medium |
 |566| [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy |
 |14| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy |
 |763| [Partition Labels](https://leetcode.com/problems/partition-labels/) | Medium |
