@@ -1,12 +1,12 @@
 # LeetCode
-I classify 200 leetcode problems into fundamental algorithms and upload my C++ and Python solution to who concern. Moreover, you can visit [my profie in LeetCode](https://leetcode.com/caobaohoang03/), I will upload solutions for some  problems regularly. Hope you have great time practicing Leetcode.
+Trying to solve those 200 Leetcode Problems in Cpp. 
 
 ---
 **WEEK 1**
 | # | Title | Difficulty |
 |---| ----- | -------- |
 |  | **Array** | |
-|15| [3Sum](https://leetcode.com/problems/3sum) | Medium |
+|DONE 15| [3Sum](https://leetcode.com/problems/3sum) | Medium |
 |1324| [Print Words Vertically](https://leetcode.com/problems/print-words-vertically/) | Medium |
 |566| [Reshape the Matrix](https://leetcode.com/problems/reshape-the-matrix/) | Easy |
 |14| [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) | Easy |
