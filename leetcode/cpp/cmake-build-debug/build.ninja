@@ -73,6 +73,12 @@ build CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o: CXX_COMPIL
   OBJECT_DIR = CMakeFiles/cpp.dir
   OBJECT_FILE_DIR = CMakeFiles/cpp.dir/Week1_Problems
 
+build CMakeFiles/cpp.dir/Week1_Problems/JumpGame_55.cpp.o: CXX_COMPILER__cpp_unscanned_Debug /Users/fabianstiewe/Desktop/Coding/Github$ Public/Algorithm-and-Data-Structures/leetcode/cpp/Week1_Problems/JumpGame_55.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles/cpp.dir/Week1_Problems/JumpGame_55.cpp.o.d
+  FLAGS = -g -std=gnu++2b -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/cpp.dir/Week1_Problems
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cpp
@@ -81,7 +87,7 @@ build CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable cpp
 
-build cpp: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.o CMakeFiles/cpp.dir/Week1_Problems/ThreeSum.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PrintWordsVertically_1324.cpp.o CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o
+build cpp: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.o CMakeFiles/cpp.dir/Week1_Problems/ThreeSum.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PrintWordsVertically_1324.cpp.o CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o CMakeFiles/cpp.dir/Week1_Problems/JumpGame_55.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
   OBJECT_DIR = CMakeFiles/cpp.dir
   POST_BUILD = :
