@@ -9,4 +9,5 @@ add_executable(cpp main.cpp
         Week1_Problems/LongestCommonPrefix_14.cpp
         Week1_Problems/JumpGame_55.cpp
         Week1_Problems/SearchInRotatedSortedArray_33.cpp
+        Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp
 )
