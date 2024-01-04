@@ -6,6 +6,7 @@
 #include "Week1_Problems/JumpGame_55.cpp"
 #include "Week1_Problems/SearchInRotatedSortedArray_33.cpp"
 #include "Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp"
+#include "Week1_Problems/UniquePathes_62.cpp"
 
 int main()
 {
