@@ -11,4 +11,5 @@ add_executable(cpp main.cpp
         Week1_Problems/SearchInRotatedSortedArray_33.cpp
         Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp
         Week1_Problems/UniquePathes_62.cpp
+        Week1_Problems/FindTheStudentThatWillReplaceTheChalk_1894.cpp
 )
