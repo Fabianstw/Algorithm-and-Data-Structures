@@ -11,7 +11,7 @@ using namespace std;
  * Beats around 80%
  */
 
-class Solution {
+class Solution_FindTheStudentThatWillReplaceTheChalk_1894 {
 public:
     int chalkReplacer(vector<int>& chalk, int k) {
 
