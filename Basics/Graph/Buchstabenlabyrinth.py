@@ -30,6 +30,7 @@ def fastest_way_brute_force(matrix, z=0, s=0, curr_letter="x"):
 
 def fastest_way(matrix):
     pass
+# fast variant of the algorithm in BFS.py
 
 
 if __name__ == '__main__':

@@ -24,6 +24,11 @@ def read_input():
 
         pred[start-1][end-1] = start
 
+    for p in pred:
+        print(p)
+
+    exit(0)
+
 
 def basic_dynamic_programming():
     # initialize the matrix
@@ -57,7 +62,7 @@ def FloydWarshall():
 
 
 def read_file():
-    file_path = "/Users/fabian/Desktop/Coding/Semester 3/Algorithm-and-Data-Structures/APSP/aves-wildbird-network-6/aves-wildbird-network-6.edges"
+    file_path = "aves-barn-swallow-contact-network/aves-barn-swallow-contact-network.edges"
     all_lines = []
     max_number = 0
     with open(file_path, "r") as f:
@@ -83,6 +88,11 @@ def read_file():
         graph[start-1][end-1] = weight
 
         pred[start - 1][end - 1] = start
+
+    for p in pred:
+        print(p)
+
+    exit(0)
 
 
 if __name__ == '__main__':
