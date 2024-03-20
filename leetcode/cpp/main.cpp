@@ -1,26 +1,83 @@
 #include <iostream>
+#include <fstream>
+#include <unordered_set>
+#include "algo-helper-runtime/json.hpp"
+#include <unordered_map>
 
-#include "Week1_Problems/ThreeSum.cpp"
-#include "Week1_Problems/PrintWordsVertically_1324.cpp"
-#include "Week1_Problems/LongestCommonPrefix_14.cpp"
-#include "Week1_Problems/JumpGame_55.cpp"
-#include "Week1_Problems/SearchInRotatedSortedArray_33.cpp"
-#include "Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp"
-#include "Week1_Problems/UniquePathes_62.cpp"
-#include "Week1_Problems/FindTheStudentThatWillReplaceTheChalk_1894.cpp"
-#include "Week1_Problems/PartitionLabels_763.cpp"
-#include "Week1_Problems/BestTimeToBuyAndSellStockWithTransactionfee_714.cpp"
+using namespace std;
 
-int main()
-{
+using json = nlohmann::json;
+std::unordered_set<std::string> dictionarywords;
 
-    vector<int> values = {1,3,2,8,4,9};
-    int fee = 2;
+void loadDictionary(const std::string& dictionaryFile) {
+    std::ifstream file(dictionaryFile);
 
-    Solution sol;
+    if (file.is_open()) {
+        json jsonDictionary;
+        file >> jsonDictionary;
 
-    cout << sol.maxProfit(values, fee);
+        for (const auto& word : jsonDictionary) {
+            dictionarywords.insert(word.get<std::string>());
+        }
+
+        file.close();
+    }
+
+}
+
+std::unordered_map<char, int> stringToLetterCount(const std::string& inputString) {
+    std::unordered_map<char, int> letterCountMap;
+
+    for (char letter : inputString) {
+        // Increment the count for each letter
+        letterCountMap[letter]++;
+    }
+
+    return letterCountMap;
+}
+
+int main() {
+    std::string filePath = "/Users/fabianstiewe/Desktop/Coding/Github Public/Algorithm-and-Data-Structures/leetcode/cpp/algo-helper-runtime/words_alpha.txt";
+
+    // make an vector string empty
+    vector<string> words_len8;
+    vector<string> words_len9;
+    vector<string> words_len10;
+    vector<string> words_len11;
+    vector<string> words_len12;
+
+    std::ifstream inputFile(filePath);
+
+    if (!inputFile.is_open()) {
+        std::cerr << "Error opening file: " << filePath << std::endl;
+        return 1;
+    }
+
+    std::string line;
+    int count = 0;
+    while (std::getline(inputFile, line)) {
+        if (count > 100) {
+            break;
+        }
+        count++;
+        // Print each line to check if it's being read correctly
+        std::cout << "Read line: ";
+        for (char character : line) {
+            std::cout << character << " (" << static_cast<int>(character) << ") ";  // Print each character and its ASCII value
+        }
+        std::cout << std::endl;
+
+        if (line.size() == 8) {
+            words_len8.push_back(line);
+            // convert the string to a set
+            std::unordered_map<char, int> letterCountMap = stringToLetterCount(line);
+            if (letterCountMap.size() == 3) {
+                // check if one letter repeats one time, one twice and the last 5 times
+                // if so, add it to the vector
+            }
+        }
+    }
+
 
     return 0;
-
 }

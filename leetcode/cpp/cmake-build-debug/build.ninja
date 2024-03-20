@@ -115,6 +115,12 @@ build CMakeFiles/cpp.dir/Week1_Problems/BestTimeToBuyAndSellStockWithTransaction
   OBJECT_DIR = CMakeFiles/cpp.dir
   OBJECT_FILE_DIR = CMakeFiles/cpp.dir/Week1_Problems
 
+build CMakeFiles/cpp.dir/algo-helper-runtime/GenerateWords.cpp.o: CXX_COMPILER__cpp_unscanned_Debug /Users/fabianstiewe/Desktop/Coding/Github$ Public/Algorithm-and-Data-Structures/leetcode/cpp/algo-helper-runtime/GenerateWords.cpp || cmake_object_order_depends_target_cpp
+  DEP_FILE = CMakeFiles/cpp.dir/algo-helper-runtime/GenerateWords.cpp.o.d
+  FLAGS = -g -std=gnu++2b -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/cpp.dir/algo-helper-runtime
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cpp
@@ -123,7 +129,7 @@ build CMakeFiles/cpp.dir/Week1_Problems/BestTimeToBuyAndSellStockWithTransaction
 #############################################
 # Link the executable cpp
 
-build cpp: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.o CMakeFiles/cpp.dir/Week1_Problems/ThreeSum.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PrintWordsVertically_1324.cpp.o CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o CMakeFiles/cpp.dir/Week1_Problems/JumpGame_55.cpp.o CMakeFiles/cpp.dir/Week1_Problems/SearchInRotatedSortedArray_33.cpp.o CMakeFiles/cpp.dir/Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp.o CMakeFiles/cpp.dir/Week1_Problems/UniquePathes_62.cpp.o CMakeFiles/cpp.dir/Week1_Problems/FindTheStudentThatWillReplaceTheChalk_1894.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PartitionLabels_763.cpp.o CMakeFiles/cpp.dir/Week1_Problems/BestTimeToBuyAndSellStockWithTransactionfee_714.cpp.o
+build cpp: CXX_EXECUTABLE_LINKER__cpp_Debug CMakeFiles/cpp.dir/main.cpp.o CMakeFiles/cpp.dir/Week1_Problems/ThreeSum.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PrintWordsVertically_1324.cpp.o CMakeFiles/cpp.dir/Week1_Problems/LongestCommonPrefix_14.cpp.o CMakeFiles/cpp.dir/Week1_Problems/JumpGame_55.cpp.o CMakeFiles/cpp.dir/Week1_Problems/SearchInRotatedSortedArray_33.cpp.o CMakeFiles/cpp.dir/Week1_Problems/MaximumAreaofaPieceofCakeAfterHorizontalandVerticalCuts_1465.cpp.o CMakeFiles/cpp.dir/Week1_Problems/UniquePathes_62.cpp.o CMakeFiles/cpp.dir/Week1_Problems/FindTheStudentThatWillReplaceTheChalk_1894.cpp.o CMakeFiles/cpp.dir/Week1_Problems/PartitionLabels_763.cpp.o CMakeFiles/cpp.dir/Week1_Problems/BestTimeToBuyAndSellStockWithTransactionfee_714.cpp.o CMakeFiles/cpp.dir/algo-helper-runtime/GenerateWords.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6
   OBJECT_DIR = CMakeFiles/cpp.dir
   POST_BUILD = :

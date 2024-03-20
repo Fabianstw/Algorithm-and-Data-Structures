@@ -14,4 +14,5 @@ add_executable(cpp main.cpp
         Week1_Problems/FindTheStudentThatWillReplaceTheChalk_1894.cpp
         Week1_Problems/PartitionLabels_763.cpp
         Week1_Problems/BestTimeToBuyAndSellStockWithTransactionfee_714.cpp
+        algo-helper-runtime/GenerateWords.cpp
 )

@@ -9,7 +9,7 @@ using namespace std;
 #include <algorithm>
 #include <map>
 
-class Solution {
+class SolutionBestTimeToBuyAndSellStockWithTransactionFee {
 
 private:
     map<pair<bool, int>, int> memo;
